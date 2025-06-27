@@ -1,0 +1,260 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Constructora GERSTH</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #0f172a;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        header h1 span {
+            color: #facc15;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #1e293b;
+        }
+
+        nav a {
+            color: white;
+            padding: 14px 20px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #334155;
+        }
+
+        .hero {
+            background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') no-repeat center center/cover;
+            height: 400px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 2px 2px 4px #000;
+            font-size: 2.5rem;
+            text-align: center;
+            padding: 20px;
+            animation: fadeIn 2s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        section {
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .services, .projects, .testimonials {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 20px;
+            width: 280px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        form {
+            max-width: 400px;
+            margin: auto;
+            text-align: left;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: #facc15;
+            color: #0f172a;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #eab308;
+        }
+
+        footer {
+            background-color: #0f172a;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        .whatsapp-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #25D366;
+            color: white;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 30px;
+            text-decoration: none;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            z-index: 1000;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1><span>Constructora</span> GERSTH</h1>
+        <p>Construimos tus sueños con calidad y compromiso</p>
+    </header>
+
+    <nav>
+        <a href="#inicio">Inicio</a>
+        <a href="#nosotros">Nosotros</a>
+        <a href="#servicios">Servicios</a>
+        <a href="#proyectos">Proyectos</a>
+        <a href="#testimonios">Testimonios</a>
+        <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="hero" id="inicio">
+        <h2>Construimos con pasión, entregamos con calidad</h2>
+    </div>
+
+    <section id="nosotros">
+        <h2>Sobre Nosotros</h2>
+        <p>En Constructora GERSTH, somos expertos en materializar tus proyectos. Nos dedicamos a la construcción de viviendas, acabados finos, techos resistentes y vaciado de concreto de la más alta calidad. Nos caracterizamos por nuestra puntualidad, profesionalismo y un trato cercano con cada cliente.</p>
+    </section>
+
+    <section id="servicios">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="card">
+                <h3>Construcción de Casas</h3>
+                <p>Levantamos estructuras sólidas para hogares seguros y confortables.</p>
+            </div>
+            <div class="card">
+                <h3>Acabados Profesionales</h3>
+                <p>Te garantizamos acabados modernos, finos y de alta calidad para todos tus espacios.</p>
+            </div>
+            <div class="card">
+                <h3>Techos y Concreto</h3>
+                <p>Realizamos vaciados de concreto y techos resistentes con materiales de primera.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="proyectos">
+        <h2>Proyectos Realizados</h2>
+        <div class="projects">
+            <div class="card">
+                <h3>Casa Moderna</h3>
+                <p>Vivienda familiar construida en Lima Norte con acabados premium.</p>
+            </div>
+            <div class="card">
+                <h3>Local Comercial</h3>
+                <p>Vaciado de concreto y techado profesional en Los Olivos.</p>
+            </div>
+            <div class="card">
+                <h3>Remodelación Total</h3>
+                <p>Renovación completa de interiores con acabados de lujo en Miraflores.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonios">
+        <h2>Lo Que Dicen Nuestros Clientes</h2>
+        <div class="testimonials">
+            <div class="card">
+                <p>"Estoy muy satisfecho con el trabajo. Mi casa quedó espectacular y entregaron a tiempo."</p>
+                <h4>- Juan Martínez</h4>
+            </div>
+            <div class="card">
+                <p>"Excelente atención y acabados impecables. Recomiendo totalmente a GERSTH."</p>
+                <h4>- Rosa López</h4>
+            </div>
+            <div class="card">
+                <p>"Responsables, serios y muy profesionales. Volvería a contratarlos sin dudar."</p>
+                <h4>- Pedro Ramírez</h4>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto">
+        <h2>Contáctanos Ahora</h2>
+        <form onsubmit="enviarWhatsApp(); return false;">
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" required>
+
+            <label for="mensaje">Tu Mensaje:</label>
+            <textarea id="mensaje" rows="4" required></textarea>
+
+            <button type="submit">Enviar por WhatsApp</button>
+        </form>
+    </section>
+
+    <a class="whatsapp-button" href="https://wa.me/51935743819" target="_blank">💬</a>
+
+    <footer>
+        <p>&copy; 2025 Constructora GERSTH | Todos los derechos reservados</p>
+    </footer>
+
+    <script>
+        function enviarWhatsApp() {
+            var nombre = document.getElementById('nombre').value;
+            var mensaje = document.getElementById('mensaje').value;
+
+            var url = 'https://wa.me/51935743819?text=Hola, soy ' + encodeURIComponent(nombre) + '. ' +
+                'Quisiera información sobre sus servicios. ' + encodeURIComponent(mensaje);
+
+            window.open(url, '_blank');
+        }
+    </script>
+
+</body>
+
+</html>
